@@ -1,0 +1,281 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, button {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: top;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* MY STYLES */
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.container div {
+    outline: 2px solid red;
+}
+
+header {
+    background: black;
+    color: aqua;
+    font-weight: 600;
+    margin-bottom: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+a {
+    text-transform: initial;
+    color: aquamarine;
+    text-decoration: none;
+}
+
+.cards {
+    font-size: 0;
+}
+
+.card {
+    width: 400px;
+    height: 400px;
+    padding: 10px;
+    display: inline-block;
+    font-size: 16px;
+    vertical-align: top;
+}
+
+.card-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    margin: 0 0 10px;
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 0 10px;
+}
+
+.card-text {
+    margin: 0 0 10px;
+    overflow: hidden;
+    text-transform: unset;    
+}
+
+.second-cards {
+    font-size: 0;
+}
+
+.second-cards > div {
+    display: inline-block;
+    font-size: 20px;
+    width: 800px;
+    vertical-align: top;
+}
+
+.second-cards > div + div {
+    width: 400px;
+}
+
+.second-card {
+    height: 200px;
+}
+
+.second-card-two {
+    height: 133.133px;
+}
+
+.third-cards {
+    font-size: 0;
+}
+
+.third-card-one {
+    width: 400px;
+    height: 400px;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.third-card-two {
+    width: 800px;
+    height: 200px;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 16px;
+
+}
+
+.card-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    margin: 0 0 10px;
+}
+
+.third-cards {
+    font-size: 0;
+}
+
+.third-cards > div {
+    display: inline-block;
+    font-size: 20px;
+    vertical-align: top;
+    width: 400px;
+    height: 400px;
+}
+
+.third-cards > div + div {
+    width: 800px;
+    height: auto;
+}
+
+.third-cards > div + div > div {
+    height: 200px;
+}
+
+.third-card-bottom {
+    font-size: 0;
+}
+
+.third-card-bottom > div {
+    display: inline-block;
+    font-size: 20px;
+    width: 400px;
+    height: 200px;
+    vertical-align: top;
+}
+
+.third-card-bottom > div + div > div {
+    height: 100px;
+}
+
+.third-card-bottom1{
+    background: blue;
+}
+
+.third-card-bottom1 + div {
+    background: yellow;
+}
+
+/* FLOAT CARDS*/
+
+.clearfix::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.cards-float {
+    background: #F5A9A9; 
+}
+
+.card-float {
+    float: left;
+    width: 400px;
+    height: 400px;
+    padding: 10px;
+}
+
+.second-cards-float > div {
+    font-size: 20px;
+    width: 800px;
+    float: left;
+    background: #F3F781;
+}
+
+.second-cards-float > div + div {
+    width: 400px;
+}
+
+.second-card-float {
+    height: 200px;
+}
+
+.second-card-two-float {
+    height: 133.133px;
+}
+
+.third-cards-float > div {
+    float: left;
+    font-size: 20px;
+    width: 400px;
+    height: 400px;
+    background: #A9F5F2;
+}
+
+div.third-card-one-float {
+    width: 800px;
+}
+
+.third-card-one-float > div {
+    height: 200px;
+}
+
+.therd-cards-float > div + div {
+    width: 800px;
+    height: auto;
+}
+
+.therd-cards-float > div + div > div {
+    height: 200px;
+}
+
+.third-card-bottom-float > div { 
+    float: left;
+    font-size: 20px;
+    width: 400px;
+    height: 200px;
+    background: #A9F5F2;
+}
+
+.third-card-bottom-float > div + div > div {
+    height: 100px;
+}
+
