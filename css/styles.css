@@ -1,52 +1,6 @@
-* {
-    box-sizing: border-box;
-}
+@import url('reset.css');
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video, button {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: top;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-/* MY STYLES */
+/* --- MY STYLES --- */
 
 .container {
     width: 1200px;
@@ -204,7 +158,7 @@ a {
     background: yellow;
 }
 
-/* FLOAT CARDS*/
+/* --- FLOAT CARDS --- */
 
 .clearfix::after {
     content: '';
@@ -279,3 +233,89 @@ div.third-card-one-float {
     height: 100px;
 }
 
+/* --- FLEX CARDS --- */
+
+.clearfix::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.cards-flex {
+    background: #DF7401;
+}
+
+.cards-flex {
+    display: flex;
+}
+
+.card-flex {
+    width: 400px;
+    height: 400px;
+    padding: 10px;
+}
+
+.second-cards-flex {
+    display: flex;
+}
+
+.second-cards-flex > div {
+    font-size: 20px;
+    width: 800px;
+    background: #00BFFF;
+}
+
+.second-cards-flex > div + div {
+    width: 400px;
+}
+
+.second-card-flex {
+    height: 200px;
+}
+
+.second-card-two-flex {
+    height: 133.133px;
+}
+
+.third-cards-flex {
+    display: flex;
+}
+
+.third-cards-flex > div {
+    font-size: 20px;
+    width: 400px;
+    height: 400px;
+    background: #FF00FF;
+}
+
+div.third-card-one-flex {
+    width: 800px;
+}
+
+.third-card-one-flex > div {
+    height: 200px;
+}
+
+.therd-cards-flex > div + div {
+    width: 800px;
+    height: auto;
+}
+
+.therd-cards-flex > div + div > div {
+    height: 200px;
+}
+
+.third-card-bottom-flex {
+    display: flex;
+}
+
+.third-card-bottom-flex > div { 
+    font-size: 20px;
+    width: 400px;
+    height: 200px;
+    background: #9A2EFE;
+}
+
+.third-card-bottom-flex > div + div > div {
+    height: 100px;
+}
